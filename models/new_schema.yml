@@ -31,5 +31,26 @@ sources:
         tests:
           - unique:
               column_name: "(orders_id || '-' || pdt_id)"
-            
+
+models:
+  - name: int_orders_margin
+    description: calculate margin per order
+    columns:
+      - name: orders_id
+        description: unique order_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_sales_margin
+    description: sales data agregated to date and product_id
+    columns:
+      - name: date_date
+        description: date of purchase
+        tests:
+          - not_null
+      - name: product_id
+        description: greenweez product_id
+        tests:
+          - not_null
 
