@@ -27,7 +27,9 @@ sources:
         description: greenweez date, orders, products, revenue and qty
         identifier: raw_gz_sales
         columns:
-          - name: primary_key
-            description: joined key from orders_id and product_id
-            tests:
-              -  unique
+          - name: pdt_id
+        tests:
+          - unique:
+              column_name: "(orders_id || '-' || pdt_id)"
+            
+
