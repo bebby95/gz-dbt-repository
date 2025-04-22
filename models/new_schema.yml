@@ -3,10 +3,31 @@ version: 2
 
 sources:
   - name: gz_raw_data
+    description: greenweez dataset provided by lewagon
     tables:
       - name: product
+        description: greenweez products id and purchase price
         identifier: raw_gz_product
+        columns:
+          - name: products_id
+            description: id of products sold by greenweez
+            tests: 
+              - unique
+              - not_null
       - name: ship
+        description: greenweez orders id and misc ship costs
         identifier: raw_gz_ship
+        columns:
+          - name: orders_id
+            description: unique greeweez order id
+            tests:
+              - unique
+              - not_null
       - name: sales
+        description: greenweez date, orders, products, revenue and qty
         identifier: raw_gz_sales
+        columns:
+          - name: primary_key
+            description: joined key from orders_id and product_id
+            tests:
+              -  unique
