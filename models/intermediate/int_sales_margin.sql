@@ -8,4 +8,4 @@ USING(product_id)
 
 SELECT *,
     ROUND(revenue - purchase_cost, 2) AS margin
-FROM joined;
+FROM joined
