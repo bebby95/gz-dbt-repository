@@ -1,3 +1,5 @@
+ {{ config(materialized = 'table') }}
+
 SELECT  date_date
 , SUM(ads_cost) AS ads_cost
 , CAST(SUM(impression) AS INT64) AS total_impressions

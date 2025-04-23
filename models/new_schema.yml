@@ -168,3 +168,25 @@ models:
          description: the cost of preparing the parcel in the distribution centre/warehouse
        - name: ship_cost
          description: shipping cost paid by Greenweez to the carrier/logistics provider
+
+   - name: int_campaigns_day
+     description: daily aggregated marketing data
+     columns:
+       - name: date_date
+         description: date
+         tests:
+           - unique
+           - not_null
+
+   - name: finance_campaigns_day
+     description: daily aggregated marketing data with ads_margin and operational margin
+     columns:
+       - name: date_date
+         description: date
+         tests:
+           - unique
+           - not_null
+       - name: ads_margin
+         description: operational margin - ads cost
+         tests:
+           - not_null
