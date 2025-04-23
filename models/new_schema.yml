@@ -31,7 +31,30 @@ sources:
         tests:
           - unique:
               column_name: "(orders_id || '-' || pdt_id)"
-
+      - name: adwords
+        description: raw google adsense marketing data
+        identifier: raw_gz_adwords
+        tests:
+          - not_null:
+              column_name: campaign_key
+      - name: bing
+        description: raw bing marketing data
+        identifier: raw_gz_bing
+        tests:
+          - not_null:
+              column_name: campaign_key
+      - name: criteo
+        description: raw criteo marketing data
+        identifier: raw_gz_criteo
+        tests:
+          - not_null:
+              column_name: campaign_key
+      - name: facebook
+        description: raw facebook marketing data
+        identifier: raw_gz_facebook
+        tests:
+          - not_null:
+              column_name: campaign_key
 models:
    # Staging #
    # ...snip...
