@@ -1,3 +1,4 @@
+
 SELECT date_date
 , COUNT(orders_id) AS nb_of_transactions
 , ROUND(SUM(revenue), 2) AS total_revenue
