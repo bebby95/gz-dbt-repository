@@ -1,4 +1,4 @@
-Welcome to an example of my DBT project!
+Welcome to an example of a DBT project I've worked on!
 
 ### Where can you find what I did?
  <br>
