@@ -1,15 +1,11 @@
-Welcome to your new dbt project!
+Welcome to an example of my DBT project!
 
-### Using the starter project
+### Where can you find what I did?
 
-Try running the following commands:
-- dbt run
-- dbt test
+Please check:
+gz-dbt-repository / models / for a .yml schema written manually for this project
+gz-dbt-repository / models / intermediate / for .sql queries associated with this project (including subqueries!)
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+All work was performed as part of Le Wagon London's Data Analytics Bootcamp.
+www.linkedin.com/in/bgee95
