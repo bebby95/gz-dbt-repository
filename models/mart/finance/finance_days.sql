@@ -1,3 +1,4 @@
+# table containing daily data for finance department
 
 SELECT date_date
 , COUNT(orders_id) AS nb_of_transactions
